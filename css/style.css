@@ -1,0 +1,60 @@
+body {
+    font-family: 'Lato', sans-serif;
+}  
+
+.Header {
+    border-radius: 0px;
+    margin-bottom: 0;
+    padding: 5px;
+    color: #fff;
+    font-family: 'Fredericka the Great', cursive;
+    text-align: center;
+    background: #093028; 
+    background: -webkit-linear-gradient(to right, #237a57, #093028);  
+    background: linear-gradient(to right, #237a57, #093028);
+}
+
+#list:hover {
+    background-color: #ece9e6;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 5px;
+    color:#237a57;
+    margin: 10px;
+}
+
+#map {
+    height: 76%;
+    width:75%;
+    position:absolute;
+    right:10px;
+    top:93px;
+    overflow:hidden;
+    display: flex;
+    border: 1px solid #093028;
+    margin-bottom: 20px;
+    max-width: 80%;
+}
+
+input[type=search] {
+  padding: 3px;
+  margin: 5px;
+  border: 1px solid #237a57;
+  width: 22%;
+}
+
+.Footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    padding: 3px;
+    width: 100%;
+    color: #237a57;
+    text-align: center;
+    background: #ece9e6;  
+    background: -webkit-linear-gradient(to top, #fff, #ece9e6);  
+    background: linear-gradient(to top, #fff, #ece9e6); 
+}

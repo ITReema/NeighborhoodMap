@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<meta charset="UTF-8">
+	<meta name= "viewport" content= "width=device-width, initial-scale=1">
+
+	<title>Neighborhood Map</title>
+
+	<link rel="stylesheet" href="css/style.css" />
+	<link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+	
+</head>
+<body>
+	<!-- Header -->
+	<div>
+		<nav class="Header">
+		<h1>Neighborhood Map</h1>
+		</nav>
+	</div>
+	<div>
+		<!-- search -->
+		<input id= "Search" type= "search" data-bind= "textInput: filter" placeholder= "Search..." />
+		<ul data-bind= "foreach: visiblePlaces">
+			<li id= "list" data-bind= "text: title, click: $parent.listClick"></li>
+		</ul>
+		<!-- map -->
+		<div id="map"></div>
+	</div>
+	  
+    <!-- Footer -->
+    <div>
+    	<nav class="Footer">
+    	<p>© 2018 Neighborhood Map</p>
+    	</nav>
+    </div>
+    <script src="js/lib/knockout-3.4.2.js"></script>
+    <script src="js/main.js"></script>
+	<script src="js/lib/jquery.min.js"></script>
+	<script src="js/lib/bootstrap.min.js"></script>
+    <script async defer src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAXiXvJdoEzGuzBY8MNQRQzDghqCfs1yqU&v=3&callback=initMap"></script>
+    
+</body>
+</html>
